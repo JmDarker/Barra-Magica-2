@@ -1,8 +1,12 @@
+/* se formatea todo el código. */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Formato de cuepo. */
 
 body {
     margin: 0;
@@ -13,10 +17,14 @@ body {
     background-color: cornsilk;
 }
 
+/* formato a la lista no ordenada. */
+
 ul {
     padding: 0;
     list-style: none;
 }
+
+/* Formato al contenido de las listas. */
 
 ul li {
     width: 15em;
@@ -33,6 +41,8 @@ ul li {
     cursor: pointer;
 }
 
+/* Formato a la lista los números impares. */
+
 ul li:nth-child(odd) {
     background: linear-gradient(to right, orange, tomato);
     text-align: left;
@@ -40,16 +50,22 @@ ul li:nth-child(odd) {
     transform: perspective(500px) rotateY(45deg);
 }
 
+/* Formato a la lista los números pares. */
+
 ul li:nth-child(even) {
     background: linear-gradient(to left, orange, tomato);
     text-align: right;
     transform: perspective(500px) rotateY(-45deg);
 }
 
+/* Formato a la lista los números impares con el cursor encima. */
+
 ul li:nth-child(odd):hover {
     transform: perspective(200px) rotateY(45deg);
     padding-left: 5%;
 }
+
+/* Formato a la lista los números pares con el cursor encima. */
 
 ul li:nth-child(even):hover {
     transform: perspective(200px) rotateY(-45deg);
